@@ -27,7 +27,7 @@ class CartService
 
       array_push($products, $result);
     }
-    dd($products);
+
     return $products;
   }
 }
