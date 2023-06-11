@@ -5,6 +5,7 @@ use App\Http\Controllers\ComponentTestController;
 use App\Http\Controllers\LifeCycleTestController;
 use App\Http\Controllers\User\ItemController;
 use App\Http\Controllers\User\CartController;
+use App\Http\Controllers\User\LikeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,6 +25,12 @@ Route::get('/', function () {
 Route::middleware('auth:users')->group(function () {
     Route::get('/', [ItemController::class, 'index'])->name('items.index');
     Route::get('show/{item}', [ItemController::class, 'show'])->name('items.show');
+});
+
+Route::prefix('like')->middleware('auth:users')->group(function () {
+    Route::get('/', [LikeController::class, 'index'])->name('like.index');
+    Route::post('add/{item}', [LikeController::class, 'add'])->name('like.add');
+    Route::post('delete/{item}', [LikeController::class, 'delete'])->name('like.delete');
 });
 
 Route::prefix('cart')->middleware('auth:users')->group(function () {
