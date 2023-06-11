@@ -17,15 +17,15 @@ class ShopSeeder extends Seeder
         DB::table('shops')->insert([
             [
                 'owner_id' => 1,
-                'name' => 'ここに店名が入ります',
-                'information' => 'ここにお店の情報が入ります。ここにお店の情報が入ります。ここにお店の情報が入ります。',
+                'name' => 'お店1',
+                'information' => 'お店1の情報が入ります',
                 'filename' => 'sample1.jpg',
                 'is_selling' => true
             ],
             [
                 'owner_id' => 2,
-                'name' => 'ここに店名が入ります',
-                'information' => 'ここにお店の情報が入ります。ここにお店の情報が入ります。ここにお店の情報が入ります。',
+                'name' => 'お店2',
+                'information' => 'お店2の情報が入ります',
                 'filename' => 'sample2.jpg',
                 'is_selling' => true
             ],
