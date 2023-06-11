@@ -12,6 +12,7 @@ use App\Models\Shop;
 use App\Models\PrimaryCategory;
 use App\Models\Owner;
 use App\Models\Stock;
+use App\Models\Like;
 use App\Http\Requests\ProductRequest;
 
 class ProductController extends Controller
@@ -128,6 +129,7 @@ class ProductController extends Controller
     {
         $product = Product::findOrFail($id);
         $quantity = Stock::where('product_id', $product->id)->sum('quantity');
+        $likes = Like::where('product_id', $product->id)->count();
 
         $shops = Shop::where('owner_id', Auth::id())
             ->select('id', 'name')
@@ -142,7 +144,7 @@ class ProductController extends Controller
 
         return view(
             'owner.products.edit',
-            compact('product', 'quantity', 'shops', 'images', 'categories')
+            compact('product', 'quantity', 'likes', 'shops', 'images', 'categories')
         );
     }
 
