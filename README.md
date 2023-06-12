@@ -24,9 +24,17 @@ password123
 * test1@test.com
 * test2@test.com
 
+
+* Stripe  
+カード情報 4242 4242 4242 4242  
+メールアドレス、所有者名は任意の文字列  
+有効期限は未来の月日、コードは任意の3桁数字  
+にて支払い可能(テストモード)
+
 ![index](https://drive.google.com/uc?export=view&id=12PNxrunQmuXFcN9T5B1-UfkLbBbzZ4al)
 ![cart](https://drive.google.com/uc?export=view&id=1Yz05e_LCrpoIOXZkOlv9M2FmAnlFtXoH)
 ![like](https://drive.google.com/uc?export=view&id=1obYKHJHKIlMAMm3_10QD0Y5jhi_sbS-F)
+![stripe](https://drive.google.com/uc?export=view&id=19BvayC-2VNG8d4hX26muMwvQDfT0J_B9)
 
 
 ## オーナー側 [リンク](http://116.80.77.78/owner/login)
