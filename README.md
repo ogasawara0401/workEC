@@ -6,6 +6,7 @@
 * Laravel Framework 8.83.27
 * MySQL 8.0
 * Docker version 24.0.2
+* phpMyAdmin 5.2.1 [データベースの中身はこちらから](http://116.80.77.78:4040/)
 
 ## ユーザ側 [リンク](http://116.80.77.78/login)
 * 商品カテゴリ・ワード検索
